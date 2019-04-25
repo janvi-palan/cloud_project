@@ -20,7 +20,7 @@ MongoClient.connect(url, function(err, db) {
   if (err) throw err;
   var dbo = db.db("BloodBank");
   var myobj = [
-    {guid:'57118cba-5c9f-4715-a14c-cfaax5e366bz',isActive:true,name:'Janvi Palan',gender:'female',age:25,type:'donor',bloodgroup:'AB+',email:'janvi.palan@gmail.com',phone:'+1 (964) 478-2677',address:'174 Gilmore Court, Beechmont, Texas, 9368',registered:'2018-12-22T07:57:32 +06:00',latitude:-20.558758,longitude:-34.019469}    
+    {guid:'57118cba-5c9f-4715-a14c-cfaax5e366bz',isActive:true,name:'Sarra Bounouh',gender:'female',age:27,type:'donor',bloodgroup:'O',email:'sarra.bounouh@gmail.com',phone:'+1 (206) 333-5555',address:'174 Gilmore Court, Beechmont, Texas, 9368',registered:'2018-12-22T07:57:32 +06:00',latitude:-20.558758,longitude:-34.019469}
   ];
   dbo.collection("Users").insertMany(myobj, function(err, res) {
     if (err) throw err;

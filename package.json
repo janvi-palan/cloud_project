@@ -8,8 +8,10 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "mongodb": "^3.2.3",
+    "mongoose": "^5.5.4",
     "package.json": "^2.0.1"
   }
 }
