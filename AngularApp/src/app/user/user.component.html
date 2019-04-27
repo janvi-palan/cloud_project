@@ -1,0 +1,75 @@
+<div class="row">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-content white-text">
+        <div class="row">
+          <div class="col s5">
+            <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+              <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="userService.selectedUser._id">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="name" #name="ngModel" [(ngModel)]="userService.selectedUser.name" placeholder="Enter full name" required>
+                  <label>Name :
+                    <label class="red-text">*</label>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group input-field col s12">
+                  <label>Gender :</label>
+                  <div class="form-control">
+                    <label for="male">Male :</label>
+                    <input id="male" type="radio" value="male" name="gender" #name="ngModel" [(ngModel)]="userService.selectedUser.gender">
+                    <label for="female">Female :</label>
+                    <input id="female" type="radio" value="female" name="gender" #name="ngModel" [(ngModel)]="userService.selectedUser.gender">
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="age" #name="ngModel" [(ngModel)]="userService.selectedUser.age" placeholder="Enter your age" required>
+                  <label>Age :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <label>Type :</label>
+                  <div class="form-control">
+                    <label class="radio-inline">
+                    <input type="radio" value="donor" name="type" #name="ngModel" [(ngModel)]="userService.selectedUser.type" placeholder="Enter your email id" selected>
+                    Donor :</label>
+                    <label class="radio-inline">
+                    <input type="radio" value="recipient" name="type" #name="ngModel" [(ngModel)]="userService.selectedUser.type" placeholder="Enter your email id">
+                    Recipient :</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="email" #name="ngModel" [(ngModel)]="userService.selectedUser.email" placeholder="Enter your email id" required>
+                  <label>Email :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="phone" #name="ngModel" [(ngModel)]="userService.selectedUser.phone" placeholder="Enter you phone number" required>
+                  <label>Phone :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="address" #name="ngModel" [(ngModel)]="userService.selectedUser.address" placeholder="Enter your address" required>
+                  <label>Address :</label>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col s7">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

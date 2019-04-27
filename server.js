@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb+srv://sshjuser:SSHJ678!@cluster0-s1qny.mongodb.net/test?retryWrites=true";
 
-MongoClient.connect(url, function(err, db) {
+/*MongoClient.connect(url, function(err, db) {
   if (err) throw err;
   var dbo = db.db("BloodBank");
   var myobj = [
@@ -27,7 +27,7 @@ MongoClient.connect(url, function(err, db) {
     console.log("Number of documents inserted: " + res.insertedCount);
     db.close();
   });
-});
+});*/
 
 // MongoClient.connect(url, function(err, db) {
 //   console.log("hello");
